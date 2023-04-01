@@ -18,7 +18,7 @@ GraalVM有两个实现，一个是[Oracle GraalVM](https://www.graalvm.org/)，�
 
 此处下载NIK 22 ( JDK 17 )版本， 解压后如下
 
-![image-20221201223349736](img/使用GraalVM编译native image/image-20221201223349736.png)
+![image-20221201223349736](https://s2.loli.net/2023/04/01/vUhoMaFywEJZxYN.png)
 
 ### 配置GraalVM
 
@@ -26,19 +26,19 @@ GraalVM有两个实现，一个是[Oracle GraalVM](https://www.graalvm.org/)，�
 
 1. 首先创建GRAALVM_HOME
 
-   ![image-20221201222848734](img/使用GraalVM编译native image/image-20221201222848734.png)
+   ![image-20221201222848734](https://s2.loli.net/2023/04/01/TvXtYfOGyVz4Lu7.png)
 
 2. 创建JAVA_HOME
 
-   ![image-20221201223102651](img/使用GraalVM编译native image/image-20221201223102651.png)
+   ![image-20221201223102651](https://s2.loli.net/2023/04/01/BqIZ3p4zdtnwPue.png)
 
 3. 添加Path
 
-   ![image-20221201222928832](img/使用GraalVM编译native image/image-20221201222928832.png)
+   ![image-20221201222928832](https://s2.loli.net/2023/04/01/IGPeCjF8zgwNxYH.png)
 
 4. 验证配置正确
 
-   ![image-20221201223545546](img/使用GraalVM编译native image/image-20221201223545546.png)
+   ![image-20221201223545546](https://s2.loli.net/2023/04/01/tJVYmSnBrLlbows.png)
 
 
 
@@ -48,19 +48,19 @@ GraalVM有两个实现，一个是[Oracle GraalVM](https://www.graalvm.org/)，�
 
 [Visual Studio command line doc](https://learn.microsoft.com/en-us/cpp/build/building-on-the-command-line?view=msvc-170&viewFallbackFrom=vs-2019#developer_command_prompt_shortcuts)
 
-![image-20221201223919628](img/使用GraalVM编译native image/image-20221201223919628.png)
+![image-20221201223919628](https://s2.loli.net/2023/04/01/pWE5kRarf6iDjvh.png)
 
-![image-20221201224034174](img/使用GraalVM编译native image/image-20221201224034174.png)
+![image-20221201224034174](https://s2.loli.net/2023/04/01/Ep5aBr8tJdeh4lm.png)
 
 打开**开始菜单的Visual Studio 2022文件夹**下的Developer Command Prompt for VS 2022，输入 `cl`出现如下结果，则安装Visual Studio成功。
 
-![image-20221201225137306](img/使用GraalVM编译native image/image-20221201225137306.png)
+![image-20221201225137306](https://s2.loli.net/2023/04/01/VwC6hFkDZ5WBMPc.png)
 
 
 
 **不过另开一个cmd窗口后， 又会提示cl命令不存在，则需要在环境中在另行配置Visual Studio环境**
 
-![image-20221201225743394](img/使用GraalVM编译native image/image-20221201225743394.png)
+![image-20221201225743394](https://s2.loli.net/2023/04/01/yGzQ4nukcPTXYgO.png)
 
 
 
@@ -68,19 +68,19 @@ GraalVM有两个实现，一个是[Oracle GraalVM](https://www.graalvm.org/)，�
 
 1. 创建INCLUDE
 
-   ![image-20221201230303291](img/使用GraalVM编译native image/image-20221201230303291.png)
+   ![image-20221201230303291](https://s2.loli.net/2023/04/01/crUstGBpM5Wb1Vd.png)
 
 2. 添加LIB
 
-   ![image-20221201230120502](img/使用GraalVM编译native image/image-20221201230120502.png)
+   ![image-20221201230120502](https://s2.loli.net/2023/04/01/v5IanUMEqTdwxDb.png)
 
 3. Path添加bin
 
-   ![image-20221201230138207](img/使用GraalVM编译native image/image-20221201230138207.png)
+   ![image-20221201230138207](https://s2.loli.net/2023/04/01/nT5bguoqkWxLPNe.png)
 
 4. 验证
 
-   ![image-20221201230425105](img/使用GraalVM编译native image/image-20221201230425105.png)
+   ![image-20221201230425105](https://s2.loli.net/2023/04/01/uiDK4FSAULTeNWy.png)
 
 
 
@@ -100,7 +100,4 @@ public class App {
 2. 使用native-image.cmd 编译App, 生成二进制文件
 3. 运行exe二进制文件, 输出hello world
 
-![image-20221201231457716](img/使用GraalVM编译native image/image-20221201231457716.png)
-
-
-
+![image-20221201231457716](https://s2.loli.net/2023/04/01/VkIayOJs18vUSgb.png)
